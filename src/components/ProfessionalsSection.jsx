@@ -15,7 +15,7 @@ export function ProfessionalsSection() {
         <p className="text-lg text-gray-700 mb-8">Conheça os profissionais disponíveis para ajudá-la</p>
         <div className="mb-6">
           <button className={`mr-4 px-4 py-2 rounded-lg ${filter === 'Psicóloga' ? 'bg-red-400 text-white' : 'bg-gray-300 text-gray-700'}`} onClick={() => setFilter('Psicóloga')}>Psicólogas</button>
-          <button className={`px-4 py-2 rounded-lg ${filter === 'Advogado' ? 'bg-red-400 text-white' : 'bg-gray-300 text-gray-700'}`} onClick={() => setFilter('Advogada')}>Advogadas</button>
+          <button className={`px-4 py-2 rounded-lg ${filter === 'Advogada' ? 'bg-red-400 text-white' : 'bg-gray-300 text-gray-700'}`} onClick={() => setFilter('Advogada')}>Advogadas</button>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {filteredProfessionals.map((professional, index) => (
